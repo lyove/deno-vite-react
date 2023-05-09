@@ -42,7 +42,7 @@ mkdir api && touch api/data.json && touch api/main.ts
 ```
 
 Copy and paste
-[this json file](https://github.com/denoland/deno-vue-example/blob/main/api/data.json)
+[this json file](https://github.com/denoland/examples/blob/main/with-react/api/data.json)
 into your `api/data.json`.
 
 Then, let's update `api/main.ts`:
@@ -101,12 +101,12 @@ Our app will have two routes: `/` and `/:dinosaur`.
 We'll use [`react-router-dom`](https://reactrouter.com/en/main) for our routing
 logic. Let's add that to our dependencies in `vite.config.mjs`:
 
-```mjs
+```mts
 import { defineConfig } from "npm:vite@^3.1.3";
 import react from "npm:@vitejs/plugin-react@^2.1";
 
 import "npm:react@^18.2";
-import "npm:react-dom/client@^18.2";
+import "npm:react-dom@^18.2/client";
 import "npm:react-router-dom@^6.4"; // Add this line
 
 // https://vitejs.dev/config/
