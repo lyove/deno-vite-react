@@ -15,9 +15,12 @@ jobs:
 
       - name: Build
         run: deno task build
+        
+      - name: Serve
+        run: deno task serve
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "lyove-deno-vite-react"
-          entrypoint: "/main.tsx" # TODO: update entrypoint
+          entrypoint: "main.ts" # TODO: update entrypoint
