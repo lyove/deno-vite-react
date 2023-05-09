@@ -241,7 +241,7 @@ Huzzah!
 Huzzah!  
 
 
-## Start project
+## Run project
 
 ### Running
 
