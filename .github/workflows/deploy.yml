@@ -19,12 +19,11 @@ jobs:
       - name: Build
         run: deno task build
         
-      - name: Serve
-        run: deno task serve
+#       - name: Serve
+#         run: deno task serve
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "lyove-deno-vite-react"
-          entrypoint: https://deno.land/std/http/file_server.ts # TODO: update entrypoint
-          root: dist
+          entrypoint: "main.ts" # TODO: update entrypoint
